@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<style>
+body {
+	background-color: hsl(30,20%, 95%);
+}
+h1 {
+	font-family: sans-serif;
+	font-size: 1em;
+}
+</style>
+<!-- From https://github.com/tabatkins/railroad-diagrams -->
+<link rel='stylesheet' href='railroad-diagrams.css'>
+<script src='railroad-diagrams.js'></script>
+<body>
+<h1 id="Expr">Expr</h1>
+<script>
+Diagram(Choice(0, Sequence(Choice(0, Sequence(Terminal("+")), Sequence(Choice(0, Sequence(Terminal("!"), Terminal("=")))), Sequence(Choice(0, Sequence(Terminal("/"), Terminal("/")))), Sequence(Terminal("/")))))).addTo();
+</script>
+
+</body>
