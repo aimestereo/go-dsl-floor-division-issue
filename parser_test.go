@@ -17,6 +17,7 @@ func TestOperationParser(t *testing.T) {
 	for _, c := range []testCase{
 		{`+`, Expr{Op: "+"}},   // ok
 		{`!=`, Expr{Op: "!="}}, // ok
+		{`&&`, Expr{Op: "&&"}}, // ok
 		{`/`, Expr{Op: "/"}},   // ok
 		{`//`, Expr{Op: "//"}}, // fails
 	} {

@@ -5,7 +5,7 @@ import (
 )
 
 type Expr struct {
-	Op string `@(  "+" | "!" "=" | "/" "/" | "/" )`
+	Op string `@(  "+" | "!" "=" | "&" "&" | "/" "/" | "/" )`
 }
 
 var (

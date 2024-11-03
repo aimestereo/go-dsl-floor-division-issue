@@ -14,28 +14,31 @@ go test -v -race -buildvcs ./...
 
 ```
 === RUN   TestOperationParser
-2024/11/03 18:38:55 Testing: +
+2024/11/03 19:03:20 Testing: +
 main.Expr{
   Op: "+",
 }
-2024/11/03 18:38:55 Testing: !=
+2024/11/03 19:03:20 Testing: !=
 main.Expr{
   Op: "!=",
 }
-2024/11/03 18:38:55 Testing: /
+2024/11/03 19:03:20 Testing: &&
+main.Expr{
+  Op: "&&",
+}
+2024/11/03 19:03:20 Testing: /
 main.Expr{
   Op: "/",
 }
-2024/11/03 18:38:55 Testing: //
+2024/11/03 19:03:20 Testing: //
 main.Expr{
 }
-    parser_test.go:28: Did not expect an error but got:
+    parser_test.go:29: Did not expect an error but got:
         1:3: unexpected token "<EOF>"
 --- FAIL: TestOperationParser (0.00s)
 FAIL
-FAIL    dsl     0.300s
+FAIL    dsl     0.224s
 FAIL
-
 
 ```
 
